@@ -142,37 +142,35 @@ Project Structure
 src/
 │
 ├── app/
-│   ├── login/
 │   ├── dashboard/
+│   ├── login/
+|   ├── users
 │   ├── layout.tsx
 │   └── page.tsx
 │
 ├── components/
-│   ├── dashboard/
-│   ├── users/
-│   ├── modals/
 │   ├── ui/
-│   └── shared/
+|   ├── dashboard-header.tsx
+|   ├── providers.tsx
+│   ├── user-detail-dialog.tsx
+|   ├── user-form-dialog.tsx
+│     
+│     
 │
-├── services/
-│   ├── api.ts
-│   └── user.service.ts
 │
 ├── hooks/
-│   ├── useUsers.ts
-│   └── useAuth.ts
+│   ├── use-toast.ts
+│    
 │
-├── store/
-│   └── authStore.ts
+├── lib/
+│   ├── api.ts
+│   ├── auth-store.ts
+|   ├── type.ts
+|   ├── utils.ts  
 │
-├── types/
-│
-├── utils/
-│
+|
 ├── middleware.ts
 │
-└── providers/
-
 ---
 
 Architectural Decisions
